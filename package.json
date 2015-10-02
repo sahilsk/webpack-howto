@@ -4,7 +4,9 @@
   "description": "Webpack demo app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "mocha --compilers js:babel/register --recursive",
+    "test:watch": "npm test -- --watch"    
   },
   "keywords": [
     "webpack",
